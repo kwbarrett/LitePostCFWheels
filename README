@@ -1,0 +1,7 @@
+This is my port of the LitePost project using the CFWheels framework.  LitePost is a lightweight ColdFusion-based blogging
+application.
+
+Unzip to webroot.  Then execute the litepost.sql script in the db/ folder.  The script works in MySQL 5.  It will likely need tweaking for
+MS SQL Server.  Set up a dsn in CF Administrator.  CFWheels by convention will expect the dsn to be the same as your
+application folder.  If you use anything else, you'll need to modify the settings.cfm in the config/ folder.  Add a record to the
+users table so that you can log in and begin making blog entries.
