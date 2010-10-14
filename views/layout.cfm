@@ -31,7 +31,8 @@
 			<cfoutput>
 				#linkTo(route="home", text="Home")# | 
 				#loginlogout()# | 
-				#linkTo(controller="main", action="about", text="About")#
+				#linkTo(controller="main", action="about", text="About")# | 
+				<a href="http://localhost:8501/LitePostCFWheels/rss.cfm">RSS</a>
 			</cfoutput>		
 		</p>		
 		</div>		
@@ -135,9 +136,9 @@
 
    		    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-			<a href="index.html">Home</a> |
-   		    <a href="index.html">Sitemap</a> |
-	   	    <a href="index.html">RSS Feed</a> |
+			<cfoutput>#linkTo(route="home", text="Home")# | </cfoutput>
+   		    <!--- <a href="index.html">Sitemap</a> | --->
+	   	   	<a href="http://localhost:8501/LitePostCFWheels/rss.cfm">RSS</a> | 
             <a href="http://validator.w3.org/check?uri=referer">XHTML</a> |
 			<a href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a>
 			</p>
