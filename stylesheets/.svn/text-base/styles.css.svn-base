@@ -1,0 +1,58 @@
+/*
+	Base tag styles
+*/
+
+body {
+	font-family: Tahoma, Verdana, Aria, sans-serif;
+	font-size:13px;
+}
+
+.field-with-errors input, .field-with-errors textarea, .field-with-errors select{
+	border: 1px solid #f00;
+}
+
+.error-messages{
+	color:red;
+	border: 1px solid #000;
+	width: 25%;
+}
+
+.success{
+	color:#0F0;
+}
+
+/*
+	Forms
+*/
+
+form div{
+	margin: 10px 0;
+}
+
+form fieldset{
+	margin: 10px 0;
+}
+
+form fieldset legend{
+	color: #000;
+	font-weight: bold;
+}
+
+form label{
+	font-weight:bold;
+	color:#000;
+}
+
+.instructions{
+	color:#00F;
+	font-size:14px;
+}
+
+/*
+	layout
+*/
+
+#wrapper{
+	margin: 0 auto;
+	width:994px;
+}
