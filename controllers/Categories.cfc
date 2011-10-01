@@ -29,11 +29,11 @@
 	
 	<cffunction name="update">
 		<cfset category = model("category").findByKey(params.key)>
-		
-		<cfif category.save()>
+		<cfset category.update(params.category)/><cfabort>
+		<cfif category.save()>aaa<cfabort>
 			<cfset flashInsert(success="Category was updated")>
 			<cfset renderPage(action="index")>
-		<cfelse>
+		<cfelse>bbbb<cfabort>
 			<cfset flashInsert(error="Category was not updated. #errorMessagesFor('category')#")>
 			<cfset category = model("category").findByKey(params.key)>
 			<cfset renderPage(action="edit")>
