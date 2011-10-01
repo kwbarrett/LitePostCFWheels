@@ -11,7 +11,7 @@
 		#flash("error")#
 	</cfif>
 	
-	#startFormTag(action="update", key="params.key")#
+	#startFormTag(action="update", key="#params.key#")#
 	<p>
 		#textField(label="Category name", objectName="category", property="category")#
 		#submitTag(value="Update category", class="button")#
